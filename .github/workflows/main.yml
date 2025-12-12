@@ -18,6 +18,7 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
           PROXY_SERVER: ${{ secrets.PROXY_SERVER }}
+          YESCAPTCHA_CLIENT_KEY: ${{ secrets.YESCAPTCHA_CLIENT_KEY }}
       - uses: actions/upload-artifact@v4
         with:
           path: recording.webm
